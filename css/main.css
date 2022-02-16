@@ -58,7 +58,6 @@ html {
 }
 body {
   background-color: var(--white);
-  overflow-y: hidden;
 }
 * {
   margin: 0;
