@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User-signup</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="icon" href="media/icon.png" type="image/icon type" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body onload="otherPageLoad()">
+  <header>
+    <div class="logo"><i class="fas fa-viruses"></i> Covid-India</div>
+    <span onclick="open_nav()" class="nav-toggle-open">&#9776;</span>
+    <nav id="Sidenav">
+      <ul>
+        <li>
+          <span onclick="close_nav()" class="nav-toggle-close">&times;</span>
+        </li>
+        <li>
+          <button id="toggle-theme-button"><i class="fas fa-sun"></i></button>
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="signup.html" class="active">Sign-up</a>
+        </li>
+        <li>
+          <a href="login.html">Login </a><i class="fas fa-arrow-right"></i>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="form-bg">
+    <div class="form-title">Signup</div>
+    <form action="">
+      <input type="text" name="name" placeholder="Enter Your Name" required />
+      <input type="email" placeholder="Enter Email-id" required />
+      <input type="password" placeholder="Create new Password" required />
+      <select name="doses" id="doses" required>
+        <option value="0">didn't take any dose</option>
+        <option value="1">first dose completed</option>
+        <option value="2">second dose completed</option>
+      </select>
+      <input type="date" placeholder="date of first dose">
+      <input type="submit" value="Sign-up" id="log-button" />
+    </form>
+    <b>
+      have an account?
+      <a href="login.html">Login <i class="fas fa-arrow-right"></i></a>
+    </b>
+  </div>
+  <footer>
+    <div class="copyright">Copyright &copy; Covid-India | 2020-21</div>
+    <div class="links">
+      <a href=""><i class="fab fa-github"></i></a>
+      <a href=""><i class="fab fa-linkedin"></i></a>
+      <a href=""><i class="fab fa-stack-overflow"></i></a>
+      <a href=""><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+</body>
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+
+</html>

@@ -1,0 +1,68 @@
+.form-bg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: calc(98.69vh - (4.7244vh + 4.7244vh + 3.275vh + 6.29vh));
+  padding: 6rem 1rem;
+  background-image: var(--bg-img);
+  background-size: cover;
+}
+
+.form-bg .form-title {
+  font-size: calc(35px + 3vw);
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--white);
+  text-shadow: 3px 3px 8px var(--text);
+}
+
+.form-title {
+  transform-origin: 27.3516px 23.4922px;
+  transform: translate(0px, 0px);
+}
+
+.form-bg form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-bg form input {
+  width: 17rem;
+  padding: 10px 20px;
+  margin: 20px;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--input-bg);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#log-button {
+  width: 110px;
+  transition: 300ms;
+  cursor: pointer;
+  margin: 10px 0 30px 0;
+}
+
+#log-button:hover,
+#log-button:focus {
+  width: 130px;
+}
+form select{
+  cursor: pointer;
+  width: 17rem;
+  padding: 5px 20px;
+  margin: 20px;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--input-bg);
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text);
+}
+form select option{
+  cursor: pointer;
+  background-color: var(--white);
+}
