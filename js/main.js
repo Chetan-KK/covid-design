@@ -13,7 +13,7 @@ function load() {
   updateIndia();
 
   //load animation on start
-  let timer = setTimeout(loaded, 2000);
+  let timer = setTimeout(loaded, 200);
   function loaded() {
     let loading = document.getElementById(`loading`);
     loading.style.display = `none`;

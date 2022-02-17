@@ -36,9 +36,9 @@ closeButton.addEventListener(`click`, closeSignupPage)
 
 
 function openSignupPage() {
-    signupPage.style.height = 100 + '%';
+    signupPage.style.transform = `scale(1)`
 }
 
 function closeSignupPage() {
-    signupPage.style.height = 0
+    signupPage.style.transform = `scale(0)`
 }
