@@ -1,6 +1,46 @@
-const signupButton = document.getElementById(`signupButton`)
-const signupPage = document.getElementById(`signupPage`)
-const closeButton = document.getElementById(`closeButton`)
+//darkmode toggle
+let toggleThemeButton = document.getElementById(`toggle-theme-button`);
+
+function otherPageLoad() {
+    let theme = localStorage.getItem(`theme`);
+    if (theme == `dark`) {
+        darkMode();
+    } else {
+        lightMode();
+    }
+}
+
+function lightMode() {
+    localStorage.setItem(`theme`, `light`);
+    document.body.classList.remove(`dark-mode`);
+    toggleThemeButton.innerHTML = `<i class="fas fa-moon"></i>`;
+}
+function darkMode() {
+    localStorage.setItem(`theme`, `dark`);
+    document.body.classList.add(`dark-mode`);
+    toggleThemeButton.innerHTML = `<i class="fas fa-sun"></i>`;
+}
+
+toggleThemeButton.addEventListener(`click`, function () {
+    let theme = localStorage.getItem(`theme`);
+    if (theme == `dark`) {
+        lightMode();
+    } else {
+        darkMode();
+    }
+});
+
+function open_nav() {
+    let sidenav = document.getElementById("Sidenav");
+    sidenav.style.transform = "translateX(0vw)";
+    sidenav.style.boxShadow = `0 0 20px 3px black`;
+}
+
+function close_nav() {
+    let sidenav = document.getElementById("Sidenav");
+    sidenav.style.transform = "translateX(100%)";
+    sidenav.style.boxShadow = `0 0 0px 0px black`;
+}
 
 const dose1date = document.querySelector(`.dosesDate .dose1`)
 const dose2date = document.querySelector(`.dosesDate .dose2`)
@@ -31,14 +71,3 @@ function resetDoses() {
     dose2date.removeAttribute(`required`, `required`)
 }
 
-signupButton.addEventListener(`click`, openSignupPage)
-closeButton.addEventListener(`click`, closeSignupPage)
-
-
-function openSignupPage() {
-    signupPage.style.transform = `scale(1)`
-}
-
-function closeSignupPage() {
-    signupPage.style.transform = `scale(0)`
-}

@@ -42,6 +42,7 @@
     <div class="form-title">Signup</div>
     <form action="">
       <input type="text" name="name" placeholder="Enter Your Name" required />
+      <input type="number" class="inputNumber" placeholder="Enter mobile number" required />
       <input type="email" placeholder="Enter Email-id" required />
       <input type="password" placeholder="Create new Password" required />
       <select name="doses" id="doses" required>
@@ -49,10 +50,17 @@
         <option value="1">first dose completed</option>
         <option value="2">second dose completed</option>
       </select>
-      <input type="date" placeholder="date of first dose">
+
+      <div class="dosesDate">
+        <label for="dose1Date">Enter date of first dose</label>
+        <input type="date" class="dose1 inputDate" name="dose1Date">
+        <br> <label for="dose2Date">Enter date of second dose</label>
+        <input type="date" class="dose2 inputDate" name="dose2Date">
+      </div>
+
       <input type="submit" value="Sign-up" id="log-button" />
     </form>
-    <b>
+    <b class="noAC">
       have an account?
       <a href="login.html">Login <i class="fas fa-arrow-right"></i></a>
     </b>
@@ -67,7 +75,6 @@
     </div>
   </footer>
 </body>
-<script src="js/main.js"></script>
-<script src="js/form.js"></script>
+<script src="js/signup.js"></script>
 
 </html>

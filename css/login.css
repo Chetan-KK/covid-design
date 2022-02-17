@@ -1,9 +1,8 @@
 .form-bg {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column; */
   align-items: center;
-  height: calc(98.69vh - (4.7244vh + 4.7244vh + 3.275vh + 6.29vh));
   padding: 6rem 1rem;
   background-image: var(--bg-img);
   background-size: cover;
@@ -13,6 +12,7 @@
   font-size: calc(35px + 3vw);
   font-family: "Josefin Sans", sans-serif;
   color: var(--white);
+  text-align: center;
   text-shadow: 3px 3px 8px var(--text);
 }
 
@@ -37,6 +37,12 @@
   background-color: var(--input-bg);
   font-size: 1rem;
   font-weight: bold;
+}
+
+.noAC{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #log-button {
@@ -65,4 +71,18 @@ form select{
 form select option{
   cursor: pointer;
   background-color: var(--white);
+}
+.inputNumber::-webkit-outer-spin-button,
+.inputNumber::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }

@@ -9,7 +9,6 @@
   <title>Covid-India</title>
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="css/signupPage.css">
   <link rel="icon" href="media/icon.png" type="image/icon type" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
@@ -48,43 +47,12 @@
           <a href="signup.html">Sign-up</a>
         </li>
         <li>
-          <a id="signupButton">Sign-up</a>
-        </li>
-        <li>
           <a href="login.html">Login </a><i class="fas fa-arrow-right"></i>
         </li>
       </ul>
     </nav>
   </header>
   <div id="scrollbar"></div>
-
-  <!-- sign up page -->
-
-  <div class="signupPage" id="signupPage">
-    <form action="">
-      <div id="closeButton">&times;</div>
-      <input type="text" name="name" placeholder="Enter Your Name" required />
-      <input type="number" class="inputNumber" placeholder="Enter mobile number" required />
-      <input type="email" placeholder="Enter Email-id" required />
-      <input type="password" placeholder="Create new Password" required />
-      <select name="doses" id="doses" required>
-        <option value="0">didn't take any dose</option>
-        <option value="1">first dose completed</option>
-        <option value="2">second dose completed</option>
-      </select>
-
-      <div class="dosesDate">
-        <label for="dose1Date">Enter date of first dose</label>
-        <input type="date" class="dose1 inputDate" name="dose1Date">
-        <br> <label for="dose2Date">Enter date of second dose</label>
-        <input type="date" class="dose2 inputDate" name="dose2Date">
-      </div>
-
-      <input type="submit" value="Sign-up" id="log-button" />
-    </form>
-  </div>
-
-  <!-- ////////////////////////// -->
 
   <div class="network_error" id="network_error">
     <div class="box">
@@ -232,6 +200,5 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/signup.js"></script>
 
 </html>
