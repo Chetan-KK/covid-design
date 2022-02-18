@@ -1,0 +1,85 @@
+.welcome{
+    margin: 4rem 0 0 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms;
+    z-index: 99;
+}
+body{
+    padding: 4rem 0 0 0;
+}
+.welcome .message{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(90deg,var(--primary-color),var(--secondary-color));
+    font-size: calc(15px + 2vw);
+    color: var(--text);
+    text-align: center;
+    padding: 5px 10px 0 10px;
+    border-radius: 10px;
+    font-family: "Josefin Sans", sans-serif;
+}
+.welcome .closeButton{
+    cursor: pointer;
+    font-size: calc(35px + 2vw);
+    margin: 0 0 10px 20px;
+}
+#CovidTester{
+    cursor: pointer;
+    position: fixed;
+    color: var(--text);
+    right: 20px;
+    bottom: 20px;
+    background-image: linear-gradient(0deg,var(--primary-color),10%,var(--secondary-color));
+    border: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.covidTest{
+    width: 80vw;
+    margin: 4rem auto;
+}
+.covidTest form{
+    border: 3px solid var(--text);
+    border-radius: 10px;
+    padding: 3vw;
+}
+.covidTest form .question{
+    line-height: 35px;
+    font-size: 1.5rem;
+    margin: 50px 5px;
+    color: var(--text);
+}
+.covidTest form .options{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.covidTest form .title{
+    font-size: calc(20px + 2vw);
+    font-family: "Josefin Sans", sans-serif;
+  color: var(--primary-color);
+  margin: 0 0 3vw 0;
+  font-weight: 900;
+    text-align: center;
+}
+.covidTest form ul{
+   list-style-position: inside;
+}
+.formButton{
+    float: right;
+    background-image: linear-gradient(0deg,var(--primary-color),10%,var(--secondary-color));
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: large;
+    transform: translateY(-20px);
+    font-weight: 600;
+    margin: 0 10px;
+    color: var(--text);
+}

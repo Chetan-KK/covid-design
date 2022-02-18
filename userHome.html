@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff7300" />
+    <title>Covid-India Home</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/userHome.css" />
+    <link rel="icon" href="media/icon.png" type="image/icon type" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body onload="otherPageLoad()">
+    <a href="#top" id="scrollup"><i class="fas fa-chevron-up"></i></a>
+    <header>
+        <div class="logo"><i class="fas fa-viruses"></i> Covid-India</div>
+        <span onclick="open_nav()" class="nav-toggle-open">&#9776;</span>
+        <nav id="Sidenav">
+            <ul>
+                <li>
+                    <span onclick="close_nav()" class="nav-toggle-close">&times;</span>
+                </li>
+                <li>
+                    <button id="toggle-theme-button"><i class="fas fa-sun"></i></button>
+                </li>
+                <li>
+                    <a href="#top" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="logout.jsp">Log-out</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="scrollbar"></div>
+
+    <div class="welcome">
+        <div class="message">
+            Welcome, Chetan
+            <div class="closeButton" onclick="closeMessage()">&times;</div>
+        </div>
+    </div>
+    <div class="covidTest">
+        <form action="">
+            <div class="title">Take a survey for covid</div>
+            <div class="question">
+                <p> 1. Have you come into close contact (within 6 feet) with someone who has a laboratory
+                    confirmed COVID - 19 diagnosis in the past 14 days?</p>
+                <div class="options">
+                    <input type="radio" id="q1yes" name="question1" value="yes">
+                    <label for="q1yes">yes</label>
+                    <input type="radio" id="q1no" name="question1" value="no">
+                    <label for="q1no">no</label>
+                </div>
+            </div>
+            <hr>
+            <div class="question">
+                <p>2. Do you have any of these life-threatening symptoms?
+                    <br>
+                <ul>
+                    <li>Trouble breathing</li>
+                    <li>Persistent pain or pressure in the chest</li>
+                    <li>New confusion</li>
+                    <li>Inability to wake or stay awake</li>
+                    <li>Pale, gray, or blue-colored skin, lips, or nail beds, depending on skin tone</li>
+                </ul>
+                </p>
+                <div class="options">
+                    <input type="radio" id="q2yes" name="question2" value="yes">
+                    <label for="q2yes">yes</label>
+                    <input type="radio" id="q2no" name="question2" value="no">
+                    <label for="q2no">no</label>
+                </div>
+            </div>
+            <hr>
+
+            <div class="question">
+                <p>3. Are you feeling sick?</p>
+                <div class="options">
+                    <input type="radio" id="q3yes" name="question3" value="yes">
+                    <label for="q3yes">yes</label>
+                    <input type="radio" id="q3no" name="question3" value="no">
+                    <label for="q3no">no</label>
+                </div>
+            </div>
+            <hr>
+
+            <div class="question">
+                <p>4. In the last 10 days, have you been tested for the coronavirus that causes COVID-19?</p>
+                <div class="options">
+                    <input type="radio" id="q4yes" name="question4" value="yes">
+                    <label for="q4yes">yes</label>
+                    <input type="radio" id="q4no" name="question4" value="no">
+                    <label for="q4no">no</label>
+                </div>
+            </div>
+            <hr>
+
+            <div class="question">
+                <p>5.Do you live in a group home or other setting with others (pediatric skilled nursing facility,
+                    behavioral health center, juvenile detention center, or homeless shelter)?</p>
+                <div class="options">
+                    <input type="radio" id="q5yes" name="question5" value="yes">
+                    <label for="q5yes">yes</label>
+                    <input type="radio" id="q5no" name="question5" value="no">
+                    <label for="q5no">no</label>
+                </div>
+            </div>
+
+            <input type="reset" class="formButton">
+            <input type="submit" class="formButton">
+        </form>
+    </div>
+    <footer>
+        <div class="copyright">
+            Copyright &copy; Covid-India | 2021-<span id="year">00</span>
+        </div>
+        <div class="links">
+            <a href="https://github.com/Chetan-KK/"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/chetan-khulage-846655206/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://stackoverflow.com/users/16987115/chetan-khulage"><i class="fab fa-stack-overflow"></i></a>
+            <a href="https://twitter.com/chetan_khulage"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+<script src="js/userHome.js"></script>
+
+</html>
