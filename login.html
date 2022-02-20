@@ -14,7 +14,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body onload="otherPageLoad()">
+<body onload="load()">
+  <div id="loading"><i class="fas fa-viruses"></i>Loading...</div>
+  <a href="#top" id="scrollup"><i class="fas fa-chevron-up"></i></a>
   <header>
     <div class="logo"><i class="fas fa-viruses"></i> Covid-India</div>
     <span onclick="open_nav()" class="nav-toggle-open">&#9776;</span>
@@ -38,6 +40,8 @@
       </ul>
     </nav>
   </header>
+  <div id="scrollbar"></div>
+
   <div class="form-bg login-form">
     <div class="form-title">login</div>
     <form action="">
@@ -51,12 +55,14 @@
     </b>
   </div>
   <footer>
-    <div class="copyright">Copyright &copy; Covid-India | 2020-21</div>
+    <div class="copyright">
+      Copyright &copy; Covid-India | 2021-<span id="year">00</span>
+    </div>
     <div class="links">
-      <a href=""><i class="fab fa-github"></i></a>
-      <a href=""><i class="fab fa-linkedin"></i></a>
-      <a href=""><i class="fab fa-stack-overflow"></i></a>
-      <a href=""><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/Chetan-KK/"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/chetan-khulage-846655206/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://stackoverflow.com/users/16987115/chetan-khulage"><i class="fab fa-stack-overflow"></i></a>
+      <a href="https://twitter.com/chetan_khulage"><i class="fab fa-twitter"></i></a>
     </div>
   </footer>
 </body>
