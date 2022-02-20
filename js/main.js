@@ -13,23 +13,23 @@ function load() {
   let loading = document.getElementById(`loading`);
   loading.style.display = `none`;
 }
-// function otherPageLoad() {
-//   let theme = localStorage.getItem(`theme`);
-//   if (theme == `dark`) {
-//     darkMode();
-//   } else {
-//     lightMode();
-//   }
-// }
+
+let mainTheme = document.querySelector(`meta[name="theme-color"]`)
+console.log(mainTheme);
+
 function lightMode() {
   localStorage.setItem(`theme`, `light`);
   document.body.classList.remove(`dark-mode`);
   toggleThemeButton.innerHTML = `<i class="fas fa-moon"></i>`;
+  mainTheme.removeAttribute(`content`)
+  mainTheme.setAttribute(`content`, `#ff7300`)
 }
 function darkMode() {
   localStorage.setItem(`theme`, `dark`);
   document.body.classList.add(`dark-mode`);
   toggleThemeButton.innerHTML = `<i class="fas fa-sun"></i>`;
+  mainTheme.removeAttribute(`content`)
+  mainTheme.setAttribute(`content`, `#222222`)
 }
 
 toggleThemeButton.addEventListener(`click`, function () {
