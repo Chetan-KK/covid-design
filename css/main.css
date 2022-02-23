@@ -196,7 +196,7 @@ header nav ul li .active::after {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-image: linear-gradient(
     149deg,
