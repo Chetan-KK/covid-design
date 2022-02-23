@@ -15,7 +15,6 @@ function load() {
 }
 
 let mainTheme = document.querySelector(`meta[name="theme-color"]`)
-console.log(mainTheme);
 
 function lightMode() {
   localStorage.setItem(`theme`, `light`);
